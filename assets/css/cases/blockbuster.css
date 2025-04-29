@@ -1,6 +1,6 @@
 /* assets/css/cases/blockbuster.css */
 
-/* === Variables === */
+/* === Theme Variables: define core colors for easy maintenance === */
 :root {
     --bb-blue:   #0033A0;
     --bb-yellow: #FED500;
@@ -8,29 +8,22 @@
     --bb-dark:   #1a1a1a;
   }
   
-  /* === Page Wrapper === */
-  #page-wrapper {
-    /* optional slight background tint */
-  }
-  
-  /* === Header === */
+  /* === Header Customization: overrides default styles for distinct Blockbuster branding === */
   #header {
     background-color: var(--bb-blue) !important;
     border-bottom: 4px solid var(--bb-yellow) !important;
   }
   #header h1 a {
     color: var(--bb-yellow) !important;
-    font-family: 'Impact', sans-serif;
+    font-family: 'Impact', sans-serif; /* bold font adds retro feel */
     letter-spacing: 0.1em;
   }
-  #header nav a {
-    color: var(--bb-yellow) !important;
-  }
+  #header nav a,
   #header nav a[href="#menu"]:before {
     color: var(--bb-yellow) !important;
   }
   
-  /* === Menu Panel === */
+  /* === Menu Panel Styling: ensure readability against darker background === */
   #menu .inner {
     background-color: var(--bb-blue) !important;
   }
@@ -43,11 +36,11 @@
     color: var(--bb-blue) !important;
   }
   
-  /* === Wrapper Intro === */
+  /* === Intro Section: prominent title and subtitle styling === */
   #wrapper > header {
     background-color: var(--bb-blue) !important;
     color: var(--bb-white) !important;
-    padding: 8em 0 3em 0;
+    padding: 8em 0 3em;
   }
   #wrapper > header h2 {
     border-bottom: 4px solid var(--bb-yellow) !important;
@@ -57,18 +50,13 @@
     font-style: italic;
   }
   
-  /* === Section Titles === */
-  h3.major {
-    color: var(--bb-blue) !important;
-    text-transform: uppercase;
-  }
-  
-  /* === Features (Galeria) === */
+  /* === Gallery Cards: transition for hover effect (consider using will-change for performance) === */
   .features article {
     background-color: rgba(254,213,0,0.05);
     border: 2px solid var(--bb-blue);
     border-radius: 6px;
     transition: background-color 0.3s, transform 0.3s;
+    /* Improvement: consider adding will-change: transform for smoother animations */
   }
   .features article:hover {
     background-color: var(--bb-blue) !important;
@@ -84,7 +72,7 @@
     color: var(--bb-dark);
   }
   
-  /* === Footer === */
+  /* === Footer: consistent Blockbuster palette, minimal adjustments === */
   #footer {
     background-color: var(--bb-blue) !important;
     color: var(--bb-white) !important;
@@ -92,18 +80,14 @@
   #footer h2.major {
     color: var(--bb-yellow) !important;
   }
-  #footer .contact li a,
-  #footer .copyright li {
-    color: var(--bb-white) !important;
-  }
   #footer .contact li a:hover {
     color: var(--bb-yellow) !important;
   }
   
-  /* === Utility & Responsiveness === */
+  /* === Responsive tweaks for smaller viewports === */
   @media screen and (max-width: 980px) {
     #wrapper > header {
-      padding: 6em 2em 2em 2em;
+      padding: 6em 2em 2em;
     }
     .features article {
       margin: 1em 0;
