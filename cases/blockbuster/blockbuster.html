@@ -1,120 +1,73 @@
-<!DOCTYPE HTML>
-<!--
-	Solid State by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Blockbuster Gitfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blockbuster Video</title>
+  <link rel="stylesheet" href="assets/css/blockbuster.css">
+</head>
+<body>
+  <!-- Header with Blockbuster Logo -->
+  <header>
+    <div class="logo-container">
+      <div class="blockbuster-logo">Blockbuster</div>
+    </div>
+  </header>
 
-		<!-- Page Wrapper -->
-			<div id="page-wrapper">
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Now Showing</h1>
+    <p>Make it a Blockbuster night! Browse our latest releases and classics for the perfect movie night.</p>
+    <button class="cta-button">Browse All Movies</button>
+  </section>
 
-				<!-- Header -->
-				<head>
-					<meta charset="UTF-8">
-					<meta http-equiv="X-UA-Compatible" content="IE=edge">
-					<meta name="viewport" content="width=device-width, initial-scale=1.0">
-					<title>BlockBuster</title>
-					<meta name="description" content="Site da Blockbuster - Maior locadora do mundo!">
-				
-					<link rel="preconnect" href="https://fonts.googleapis.com">
-					<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-					<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-				
-					<link rel="stylesheet" href="assets/css/all.min.css">
-					<link rel="stylesheet" href="assets/css/style.css">
-					<link rel="shortcut icon" href="imagens/icone.png">
-				</head>
+  <!-- Featured Titles Section -->
+  <section class="featured-section">
+    <h2 class="section-title">Featured Titles</h2>
+    <div class="featured-grid">
+      <!-- Movie Card 1 -->
+      <div class="movie-card">
+        <img src="/placeholder.svg?height=400&width=300" alt="Movie Poster" class="movie-image">
+        <div class="movie-details">
+          <h3 class="movie-title">The Matrix</h3>
+          <p class="movie-description">A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.</p>
+          <a href="#" class="rent-button">Rent Now</a>
+        </div>
+      </div>
 
-				<!-- Menu -->
-					<nav id="menu">
-						<div class="inner">
-							<h2>Menu</h2>
-							<ul class="links">
-								<li><a href="../../index.html">Home</a></li>
-								<li><a href="../../cases.html">Cases</a></li>
-							</ul>
-							<a href="#" class="close">Close</a>
-						</div>
-					</nav>
+      <!-- Movie Card 2 -->
+      <div class="movie-card">
+        <img src="/placeholder.svg?height=400&width=300" alt="Movie Poster" class="movie-image">
+        <div class="movie-details">
+          <h3 class="movie-title">Jurassic Park</h3>
+          <p class="movie-description">A pragmatic paleontologist visiting an almost complete theme park is tasked with protecting a couple of kids after a power failure causes the park's cloned dinosaurs to run loose.</p>
+          <a href="#" class="rent-button">Rent Now</a>
+        </div>
+      </div>
 
-				<!-- Wrapper -->
-					<section id="wrapper">
-						<header>
-							<div class="inner">
-								<h2>Generic</h2>
-								<p>Generic Description.</p>
-							</div>
-						</header>
+      <!-- Movie Card 3 -->
+      <div class="movie-card">
+        <img src="/placeholder.svg?height=400&width=300" alt="Movie Poster" class="movie-image">
+        <div class="movie-details">
+          <h3 class="movie-title">Titanic</h3>
+          <p class="movie-description">A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.</p>
+          <a href="#" class="rent-button">Rent Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-						<!-- Content -->
-							<div class="wrapper">
-								<div class="inner">
-
-									<h3 class="major">Generic Content</h3>
-									<p>Imagine what insights lie buried beneath a company. This collection of compelling business cases reveals how Data Science, Data Analysis and other cutting-edge technologies can transform organizations. Through immersive case studies, interactive dashboards and predictive algorithms, you’ll discover how data-driven strategies uncover hidden opportunities, empower strategic decisions and drive operational excellence.</p>
-
-									<p>Each narrative guides you from the original challenge, through the methods applied and key insights gained, to actionable recommendations. Embark on this journey to see how emerging tech trends can redefine resilience—and spark innovation—even in the most tested enterprises.</p>
-
-									<h3 class="major">Generic cases</h3>
-									<section class="features">
-										<article>
-											<a href="#" class="image"><img src="images/Blockbuster_logo.svg" alt="" /></a>
-											<h3 class="major">BlockBuster</h3>
-											<p>Data could be saved blockbuster company.</p>
-											<a href="#" class="special">See more</a>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/LehmanBrothers.jpg" alt="" /></a>
-											<h3 class="major">Lehman Brothers</h3>
-											<p>Risk credit analysis.</p>
-											<a href="#" class="special">See more</a>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/Blackberry-logo.jpg" alt="" /></a>
-											<h3 class="major">Blackberry</h3>
-											<p>Blackberry project description.</p>
-											<a href="#" class="special">Building</a>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/Kodak_Company_logo.png" alt="" /></a>
-											<h3 class="major">Kodak</h3>
-											<p>Kodak project description.</p>
-											<a href="#" class="special">Building</a>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/The_Big_Short.jpg" alt="" /></a>
-											<h3 class="major">The Big Short</h3>
-											<p>The movie description</p>
-											<a href="#" class="special">Building</a>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pagani_logo.svg" alt="" /></a>
-											<h3 class="major">Pagani</h3>
-											<p>Pagani company project description.</p>
-											<a href="#" class="special">Building</a>
-										</article>										
-									</section>
-
-								</div>
-							</div>
-
-					</section>
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">Blockbuster</div>
+      <div class="contact-info">
+        <p>123 Movie Lane, Hollywood, CA 90210</p>
+        <p>Phone: (555) 123-4567</p>
+        <p>Email: info@blockbuster.com</p>
+      </div>
+      <p class="copyright">© 2025 Blockbuster Video. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
 </html>
