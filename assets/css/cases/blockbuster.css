@@ -1,0 +1,112 @@
+/* assets/css/cases/blockbuster.css */
+
+/* === Variables === */
+:root {
+    --bb-blue:   #0033A0;
+    --bb-yellow: #FED500;
+    --bb-white:  #FFFFFF;
+    --bb-dark:   #1a1a1a;
+  }
+  
+  /* === Page Wrapper === */
+  #page-wrapper {
+    /* optional slight background tint */
+  }
+  
+  /* === Header === */
+  #header {
+    background-color: var(--bb-blue) !important;
+    border-bottom: 4px solid var(--bb-yellow) !important;
+  }
+  #header h1 a {
+    color: var(--bb-yellow) !important;
+    font-family: 'Impact', sans-serif;
+    letter-spacing: 0.1em;
+  }
+  #header nav a {
+    color: var(--bb-yellow) !important;
+  }
+  #header nav a[href="#menu"]:before {
+    color: var(--bb-yellow) !important;
+  }
+  
+  /* === Menu Panel === */
+  #menu .inner {
+    background-color: var(--bb-blue) !important;
+  }
+  #menu .links li a {
+    color: var(--bb-yellow) !important;
+    font-weight: 600;
+  }
+  #menu .links li a:hover {
+    background-color: var(--bb-yellow) !important;
+    color: var(--bb-blue) !important;
+  }
+  
+  /* === Wrapper Intro === */
+  #wrapper > header {
+    background-color: var(--bb-blue) !important;
+    color: var(--bb-white) !important;
+    padding: 8em 0 3em 0;
+  }
+  #wrapper > header h2 {
+    border-bottom: 4px solid var(--bb-yellow) !important;
+  }
+  #wrapper > header p {
+    color: var(--bb-yellow) !important;
+    font-style: italic;
+  }
+  
+  /* === Section Titles === */
+  h3.major {
+    color: var(--bb-blue) !important;
+    text-transform: uppercase;
+  }
+  
+  /* === Features (Galeria) === */
+  .features article {
+    background-color: rgba(254,213,0,0.05);
+    border: 2px solid var(--bb-blue);
+    border-radius: 6px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  .features article:hover {
+    background-color: var(--bb-blue) !important;
+    transform: scale(1.04);
+  }
+  .features article h3 {
+    color: var(--bb-dark);
+  }
+  .features article:hover h3 {
+    color: var(--bb-yellow) !important;
+  }
+  .features article p {
+    color: var(--bb-dark);
+  }
+  
+  /* === Footer === */
+  #footer {
+    background-color: var(--bb-blue) !important;
+    color: var(--bb-white) !important;
+  }
+  #footer h2.major {
+    color: var(--bb-yellow) !important;
+  }
+  #footer .contact li a,
+  #footer .copyright li {
+    color: var(--bb-white) !important;
+  }
+  #footer .contact li a:hover {
+    color: var(--bb-yellow) !important;
+  }
+  
+  /* === Utility & Responsiveness === */
+  @media screen and (max-width: 980px) {
+    #wrapper > header {
+      padding: 6em 2em 2em 2em;
+    }
+    .features article {
+      margin: 1em 0;
+    }
+  }
+  
