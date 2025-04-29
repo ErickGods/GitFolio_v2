@@ -1,72 +1,42 @@
+<!-- index.html -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blockbuster Video</title>
-  <link rel="stylesheet" href="assets/css/blockbuster.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projeto Educativo Blockbuster</title>
+  <!-- Mesma tipografia do site original -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <!-- Header with Blockbuster Logo -->
-  <header>
-    <div class="logo-container">
-      <div class="blockbuster-logo">Blockbuster</div>
+  <!-- CABEÇALHO -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#" class="logo">Blockbuster</a>
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="#research">Pesquisas</a></li>
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <h1>Now Showing</h1>
-    <p>Make it a Blockbuster night! Browse our latest releases and classics for the perfect movie night.</p>
-    <button class="cta-button">Browse All Movies</button>
-  </section>
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main class="site-main">
+    <!-- Aqui você injeta seus textos, gráficos, pesquisas etc. -->
+  </main>
 
-  <!-- Featured Titles Section -->
-  <section class="featured-section">
-    <h2 class="section-title">Featured Titles</h2>
-    <div class="featured-grid">
-      <!-- Movie Card 1 -->
-      <div class="movie-card">
-        <img src="/placeholder.svg?height=400&width=300" alt="Movie Poster" class="movie-image">
-        <div class="movie-details">
-          <h3 class="movie-title">The Matrix</h3>
-          <p class="movie-description">A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.</p>
-          <a href="#" class="rent-button">Rent Now</a>
-        </div>
-      </div>
-
-      <!-- Movie Card 2 -->
-      <div class="movie-card">
-        <img src="/placeholder.svg?height=400&width=300" alt="Movie Poster" class="movie-image">
-        <div class="movie-details">
-          <h3 class="movie-title">Jurassic Park</h3>
-          <p class="movie-description">A pragmatic paleontologist visiting an almost complete theme park is tasked with protecting a couple of kids after a power failure causes the park's cloned dinosaurs to run loose.</p>
-          <a href="#" class="rent-button">Rent Now</a>
-        </div>
-      </div>
-
-      <!-- Movie Card 3 -->
-      <div class="movie-card">
-        <img src="/placeholder.svg?height=400&width=300" alt="Movie Poster" class="movie-image">
-        <div class="movie-details">
-          <h3 class="movie-title">Titanic</h3>
-          <p class="movie-description">A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.</p>
-          <a href="#" class="rent-button">Rent Now</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <div class="footer-content">
-      <div class="footer-logo">Blockbuster</div>
-      <div class="contact-info">
-        <p>123 Movie Lane, Hollywood, CA 90210</p>
-        <p>Phone: (555) 123-4567</p>
-        <p>Email: info@blockbuster.com</p>
-      </div>
-      <p class="copyright">© 2025 Blockbuster Video. All Rights Reserved.</p>
+  <!-- RODAPÉ -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>© 2025 Projeto Educativo Blockbuster. Todos os direitos reservados.</p>
     </div>
   </footer>
 </body>

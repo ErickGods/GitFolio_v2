@@ -1,0 +1,90 @@
+/* styles.css */
+
+/* 1) Variáveis globais de cor e tipografia */
+:root {
+    --color-bg: #0b0f17;       /* preto azulado do site */
+    --color-text: #ffffff;     /* branco puro */
+    --color-primary: #ffd200;  /* amarelo Blockbuster */
+    --font-main: 'Montserrat', sans-serif;
+  }
+  
+  /* 2) Reset básico */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* 3) Body */
+  body {
+    font-family: var(--font-main);
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    line-height: 1.6;
+  }
+  
+  /* 4) Cabeçalho fixo */
+  .site-header {
+    background: var(--color-bg);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+  }
+  .header-inner {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+  }
+  .logo {
+    font-size: 1.75rem;
+    font-weight: 900;
+    color: var(--color-text);
+    text-decoration: none;
+    letter-spacing: 2px;
+  }
+  .main-nav .nav-list {
+    display: flex;
+    gap: 2rem;
+  }
+  .main-nav .nav-list li {
+    list-style: none;
+  }
+  .main-nav .nav-list a {
+    color: var(--color-text);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: color 0.2s;
+  }
+  .main-nav .nav-list a:hover {
+    color: var(--color-primary);
+  }
+  
+  /* 5) Espaço para o conteúdo (desloca abaixo do header) */
+  .site-main {
+    padding-top: 80px; /* altura do header */
+    min-height: calc(100vh - 160px);
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* 6) Rodapé */
+  .site-footer {
+    background: var(--color-bg);
+    text-align: center;
+    padding: 2rem 0;
+    border-top: 1px solid rgba(255,255,255,0.1);
+  }
+  .footer-inner p {
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.7);
+  }
+  
