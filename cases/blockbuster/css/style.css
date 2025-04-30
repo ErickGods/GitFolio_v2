@@ -2,7 +2,7 @@
 
 /* 1) Variáveis globais de cor e tipografia */
 :root {
-    --color-bg: #0b0f17;       /* preto azulado do site */
+    --color-bg: #1f4489;       /* Azul blockbuster */
     --color-text: #ffffff;     /* branco puro */
     --color-primary: #ffd200;  /* amarelo Blockbuster */
     --font-main: 'Montserrat', sans-serif;
@@ -18,7 +18,7 @@
   /* 3) Body */
   body {
     font-family: var(--font-main);
-    background-color: var(--color-bg);
+    background-color: var(--color-text);
     color: var(--color-text);
     line-height: 1.6;
   }
@@ -29,6 +29,7 @@
     position: fixed;
     top: 0;
     width: 100%;
+    height: 80px;
     z-index: 1000;
     box-shadow: 0 2px 4px rgba(0,0,0,0.5);
   }
@@ -43,9 +44,11 @@
   }
   .logo {
     font-size: 1.75rem;
-    font-weight: 900;
-    color: var(--color-text);
+    font-weight: 16;
+    color: var(--color-primary);
     text-decoration: none;
+    width: 200px;
+    height: auto; /* mantém a proporção */
     letter-spacing: 2px;
   }
   .main-nav .nav-list {
@@ -86,5 +89,25 @@
   .footer-inner p {
     font-size: 0.9rem;
     color: rgba(255,255,255,0.7);
+  }
+  .site-main {
+    padding: 40px 20px;
+    background-color: #fdfdfd;
+    font-family: sans-serif;
+    color: #333;
+    text-align: center;
+  }
+  
+  .main-content h1 {
+    padding-top: 80px; /* altura do header */
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .main-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
   }
   
