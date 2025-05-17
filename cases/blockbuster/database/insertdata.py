@@ -39,7 +39,7 @@ for _ in range(num_clientes):
     status = random.choice(['Active', 'Inactive', 'Blocked']) #randon function
 
     cursor.execute("""
-        INSERT INTO BB_Clientes (
+        INSERT INTO BB_Clients (
             ClientName, Email, Birthday, Gender, CPF,
             Telephone, HouseAddress, City, ClientState, StatusClient
         ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)

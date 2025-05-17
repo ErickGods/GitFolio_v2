@@ -1,6 +1,6 @@
 CREATE TABLE BB_Clients (
     ClientID INT PRIMARY KEY IDENTITY(1,1),   -- PK
-    ClientName VARCHAR(100) NOT NULL,               -- Name
+    ClientName VARCHAR(100) NOT NULL,         -- Name
     Email VARCHAR(100),                       -- E-mail
     Birthday DATE,                            -- Birthday
     Gender CHAR(1),                           -- Gender as: M (male), F (female), O (others)
