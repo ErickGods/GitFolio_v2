@@ -19,70 +19,51 @@
       <img src="images/blockbuster-logo.svg" class="logo">
       <nav class="main-nav">
         <ul class="nav-list">
-          <li><a href="#research">Pesquisas</a></li>
-          <li><a href="#projects">Projetos</a></li>
-          <li><a href="#about">Sobre</a></li>
-          <li><a href="#contact">Contato</a></li>
+          <li><a href="#research">Home</a></li>
+          <li><a href="#projects">Content</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
+<!-- Splide CSS -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"
+/>
+<!-- Splide JS -->
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+<script src="js/main.js"></script>
+<section id="banner-carousel" class="splide">
+  <div class="splide__track">
+    <ul class="splide__list">
+      <!-- Slide 1 -->
+      <li class="splide__slide">
+        <img src="/cases/blockbuster/images/TicketLogo.png" alt="Título do Filme 1" />
+      </li>
+      <!-- Slide 2 -->
+      <li class="splide__slide">
+        <img src="/cases/blockbuster/images/shelfs.png" alt="Título do Filme 2" />
+      </li>
+      <!-- Slide 3 -->
+      <li class="splide__slide">
+        <img src="/cases/blockbuster/images/front.png" alt="Título do Filme 3" />
+      </li>
+      <!-- …adicione quantos posters quiser -->
+    </ul>
+  </div>
 
- <!-- CONTEÚDO PRINCIPAL -->
-<main class="site-main">
-	<section class="main-content">
-	  <h1>Bem-vindo à Última Blockbuster</h1>
-	  <p>
-		Este é um espaço dedicado à nostalgia, cultura pop e boas memórias.
-		Explore nossos projetos, pesquisas e descubra mais sobre esse ícone do entretenimento.
-    MUITA COISA
-    MUITA MUITA MUITA
-    MUITA COISA
-    MUITA
-	  </p>
-    <p>MAIS COISA MAIS MAIA
-    </p>
-    <p>MAIS COISA MAIS MAIA
-    </p>
-    <p>MAIS COISA MAIS MAIA
-    </p>
-    <p>MAIS COISA MAIS MAIA
-    </p>
-    <p>MAIS COISA MAIS MAIA
-    </p>
-    <p>MAIS COISA MAIS MAIA
-    </p>
-    <p>MAIS COISA MAIS MAIA
-    </p>
-    <p>MAIS COISA MAIS MAIA
-    </p>
-    <p>MAIS COISA MAIS MAIA
-    </p>
-    <p>MAIS COISA MAIS MAIA
-    </p>
-    <p>MAIS COISA MAIS MAIA
-    </p>
-    <p>MAIS COISA MAIS MAIA
-    </p>
-    <p>MAIS COISA MAIS MAIA
-    </p>
-    <p>MAIS COISA MAIS MAIA
-    </p>
-    <p>MAIS COISA MAIS MAIA
-    </p>
-    <p>MAIS COISA MAIS MAIA
-    </p>
-    <p>MAIS COISA MAIS MAIA
-    </p>
-    <p>MAIS COISA MAIS MAIA
-    </p>
+  <!-- Botões de navegação (setas) -->
+  <div class="splide__arrows">
+    <button class="splide__arrow splide__arrow--prev"></button>
+    <button class="splide__arrow splide__arrow--next"></button>
+  </div>
 
-	</section>
-  </main>
-  
-    <!-- Aqui você injeta seus textos, gráficos, pesquisas etc. -->
-  </main>
-  <body>
+  <!-- Pontos de navegação -->
+  <ul class="splide__pagination"></ul>
+</section>
+
   <!-- RODAPÉ -->
   <footer class="site-footer">
     <div class="footer-inner">
