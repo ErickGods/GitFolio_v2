@@ -1,24 +1,25 @@
-<!-- index.html -->
+<!-- blockbuster.html -->
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projeto Blockbuster</title>
-  <!-- Mesma tipografia do site original -->
+
+  <!-- Seu CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Splide CSS (apenas uma vez, com quotes) -->
   <link
     rel="stylesheet"
-    href=https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css
-      />
-
-  <!-- href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" -->
-  <link rel="stylesheet" href="css/style.css" />
+    href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"
+  />
 </head>
 <body>
   <!-- CABEÇALHO -->
   <header class="site-header">
     <div class="header-inner">
-      <img src="images/blockbuster-logo.svg" class="logo">
+      <img src="images/blockbuster-logo.svg" class="logo" alt="Logo Blockbuster" />
       <nav class="main-nav">
         <ul class="nav-list">
           <li><a href="#research">Home</a></li>
@@ -29,42 +30,40 @@
       </nav>
     </div>
   </header>
-<!-- Splide CSS -->
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"
-/>
-<!-- Splide JS -->
-<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
-<script src="js/main.js"></script>
-<section id="banner-carousel" class="splide">
-  <div class="splide__track">
-    <ul class="splide__list">
-      <!-- Slide 1 -->
-      <li class="splide__slide">
-        <img src="/cases/blockbuster/images/TicketLogo.png" alt="Título do Filme 1" />
-      </li>
-      <!-- Slide 2 -->
-      <li class="splide__slide">
-        <img src="/cases/blockbuster/images/shelfs.png" alt="Título do Filme 2" />
-      </li>
-      <!-- Slide 3 -->
-      <li class="splide__slide">
-        <img src="/cases/blockbuster/images/front.png" alt="Título do Filme 3" />
-      </li>
-      <!-- …adicione quantos posters quiser -->
-    </ul>
-  </div>
 
-  <!-- Botões de navegação (setas) -->
-  <div class="splide__arrows">
-    <button class="splide__arrow splide__arrow--prev"></button>
-    <button class="splide__arrow splide__arrow--next"></button>
-  </div>
-
-  <!-- Pontos de navegação -->
-  <ul class="splide__pagination"></ul>
-</section>
+  <!-- CARROSSEL -->
+  <section id="banner-carousel" class="splide" style="margin-top: 80px;">
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide">
+          <img src="images/TicketLogo.png" alt="Ticket Logo" />
+          <div class="slide-content">
+            <h2>Título do Slide 1</h2>
+            <p>Legenda explicativa do slide 1.</p>
+          </div>
+        </li>
+        <li class="splide__slide">
+          <img src="images/shelfs.png" alt="Estantes" />
+          <div class="slide-content">
+            <h2>Título do Slide 2</h2>
+            <p>Legenda explicativa do slide 2.</p>
+          </div>
+        </li>
+        <li class="splide__slide">
+          <img src="images/front.png" alt="Frente da loja" />
+          <div class="slide-content">
+            <h2>Título do Slide 3</h2>
+            <p>Legenda explicativa do slide 3.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="splide__arrows">
+      <button class="splide__arrow splide__arrow--prev"></button>
+      <button class="splide__arrow splide__arrow--next"></button>
+    </div>
+    <ul class="splide__pagination"></ul>
+  </section>
 
   <!-- RODAPÉ -->
   <footer class="site-footer">
@@ -72,4 +71,10 @@
       <p>© 2025 Projeto Blockbuster. Apenas para fins demonstrativos.</p>
     </div>
   </footer>
+
+  <!-- Splide JS (no fim do body) -->
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+  <!-- Seu script de inicialização -->
+  <script src="js/main.js"></script>
+</body>
 </html>
