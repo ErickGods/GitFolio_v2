@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Teste Carrossel Blockbuster</title>
+
+  <!-- Splide CSS (CDN) -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"
+  />
+
+  <!-- Seu CSS principal -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- Aqui basta colocar suas imagens e legendas -->
+  <section id="banner-carousel" class="splide">
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide">
+          <img src="images/poster1.jpg" alt="Filme 1" />
+          <div class="slide-content">
+            <h2>Filme 1</h2>
+            <p>Descrição do Filme 1</p>
+          </div>
+        </li>
+        <li class="splide__slide">
+          <img src="images/poster2.jpg" alt="Filme 2" />
+          <div class="slide-content">
+            <h2>Filme 2</h2>
+            <p>Descrição do Filme 2</p>
+          </div>
+        </li>
+        <li class="splide__slide">
+          <img src="images/poster3.jpg" alt="Filme 3" />
+          <div class="slide-content">
+            <h2>Filme 3</h2>
+            <p>Descrição do Filme 3</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="splide__arrows">
+      <button class="splide__arrow splide__arrow--prev"></button>
+      <button class="splide__arrow splide__arrow--next"></button>
+    </div>
+    <ul class="splide__pagination"></ul>
+  </section>
+
+  <!-- Splide JS (CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+  
+  <!-- Script de inicialização inline -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      console.log('Inicializando Splide…');
+      new Splide('#banner-carousel', {
+        type       : 'loop',
+        perPage    : 1,
+        focus      : 'center',
+        autoplay   : true,
+        interval   : 4000,
+        pauseOnHover: true,
+        arrows     : true,
+        pagination : true,
+        gap        : '1rem',
+        breakpoints: {
+          768: { perPage: 1 },
+          1024: { perPage: 2 }
+        },
+      }).mount();
+    });
+  </script>
+</body>
+</html>
