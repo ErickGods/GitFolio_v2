@@ -298,3 +298,160 @@ footer a {
     font-size: 1.8rem;
   }
 }
+
+/* Descrição do Projeto – corpo de texto após o carrossel */
+* Seção full-width apenas com padding de espaçamento */
+.project-overview {
+  background: var(--color-bg);
+  padding: 4rem 0;
+}
+
+/* Wrapper estreito que terá fundo azul + cortes */
+.ticket-content {
+  position: relative;
+  background: var(--color-text);
+  color: var(--color-text);
+  padding: 2rem;
+  max-width: 800px;      /* controla a largura do ticket */
+  margin: 0 auto;
+  overflow: visible;
+}
+
+/* Pseudo-elementos para os cortes semicirculares */
+.ticket-content::before,
+.ticket-content::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;           /* diâmetro do furinho */
+  height: 30px;
+  background: var(--color-text);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.ticket-content::before {
+  left: -15px;           /* metade do diâmetro para posicionar */
+}
+
+.ticket-content::after {
+  right: -15px;
+}
+
+/* Mantém o texto acima dos pseudo-elementos */
+.ticket-content * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Subtítulo com underline amarelo */
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+  text-decoration: none;
+}
+.section-title::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 100%;
+  background: var(--color-primary);
+  margin-top: 4px;
+}
+
+/* Subtítulo com underline amarelo */
+.section-subtitle {
+  font-size: 1.2rem;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 200;
+  margin-bottom: 1rem;
+  display: inline-block;
+  text-decoration: none;
+}
+.section-subtitle::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: var(--color-primary);
+  margin-top: 4px;
+}
+/* Parágrafos */
+.ticket-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+/* Wrapper que aplica o skew/ângulo */
+.ticket-wrapper {
+  position: relative;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;                /* padding ficará no inner */
+  background: var(--color-bg);
+  overflow: visible;
+  color: var(--color-text);
+  /* clip-path com ângulos marcantes */
+  clip-path: polygon(
+    10% 0%,  90% 0%,    /* topo */
+    100% 15%, 100% 85%, /* borda direita */
+    90% 100%, 10% 100%, /* base */
+    0% 85%,   0% 15%    /* borda esquerda */
+  );
+}
+
+/* Cancela o skew pra o conteúdo não ficar torto */
+.ticket-inner {
+  padding: 2rem;             /* espaçamento interno */
+  position: relative;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 200;
+  font-size: 2rem;
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+/* Furinhos semicirculares nas laterais */
+.ticket-wrapper::before,
+.ticket-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 30px;               /* diâmetro do furinho */
+  height: 30px;
+  background: var(--color-text);
+  border-radius: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+.ticket-wrapper::before {
+  left: -15px;               /* metade do diâmetro */
+}
+.ticket-wrapper::after {
+  right: -15px;
+}
+
+/* Títulos com underline amarelo (mantido) */
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+  color: var(--color-text);
+}
+.section-title::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 100%;
+  background: var(--color-primary);
+  margin-top: 4px;
+}
+
+/* Parágrafos */
+.ticket-inner p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
