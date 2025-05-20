@@ -267,3 +267,32 @@ footer a {
   background: var(--color-primary);
   border-color: var(--color-primary);
 }
+.slide-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 5rem;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 50%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  box-sizing: border-box;
+  font-size: 18;
+}
+.slide-content h2 {
+  margin: 0 0 1rem;      
+  font-size: 2.5rem;
+  font-family: sans-serif;
+  color: #ffffff;
+  font-weight: 700;
+}
+@media (max-width: 600px) {
+  .slide-content {
+    padding: 1rem;       /* reduz padding em mobile */
+  }
+  .slide-content h2 {
+    font-size: 1.8rem;
+  }
+}
