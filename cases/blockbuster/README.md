@@ -15,3 +15,13 @@ Eu desenvolvi uma solução completa de análise e interfaces para revelar como 
 - Python automatiza as importações diárias, a limpeza dos dados e até a geração de dados de teste para garantirmos sempre insights atualizados e confiáveis.
 - Power BI transforma números em dashboards interativos—mostrando tendências de vendas, desempenho de produtos e segmentos de clientes de forma clara.
 - Power Apps fornece interfaces desenvolvidas com pouco código e amigáveis para que equipes e analistas entrem com dados e explorem relatórios em tempo real.
+
+## 🔧 Tools & Concepts Used
+
+- Python
+- Power Apps
+- Vibe coding (UI/UX Concepts)
+- SQL
+- Data analytics
+- Finance modeling
+---
